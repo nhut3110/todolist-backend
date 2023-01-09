@@ -1,0 +1,70 @@
+POST http://localhost:5000/auth/register
+Content-Type: application/json
+
+{
+    "full_name": "hehe",
+    "username": "hihi1234" ,
+    "password": "123456789"
+}
+###
+GET http://localhost:5000/todolist/63b79f8a9872655c9fa65ed7
+Content-Type: application/json
+Authorization: Beaer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjNiNjUyN2U1ZDNhYzM3Y2YzN2Q3ODYxIiwidXNlcm5hbWUiOiJoaWhpMTIzNCIsImlhdCI6MTY3Mjk3OTg1NCwiZXhwIjoxNjcyOTc5ODg0fQ.UYrYjHhpWul3nuYGDTaDNr-iLiol7xFy7-6j3f8RGz0
+
+{
+    "name": "hehe123456fdsa",
+    "user_id": "63b6527e5d3ac37cf37d7861"
+}
+
+###
+POST http://localhost:5000/todo/
+Content-Type: application/json
+Authorization: Beaer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjNiNjUyN2U1ZDNhYzM3Y2YzN2Q3ODYxIiwidXNlcm5hbWUiOiJoaWhpMTIzNCIsImlhdCI6MTY3Mjk5NzY2MCwiZXhwIjoxNjcyOTk3OTYwfQ.hrhvRfyJClVuKLjZK288Ow7HJqP1fOopMA0i-YT57fw
+
+{
+    "name": "hehe11112134",
+    "list_id": "63b79f8a9872655c9fa65ed7",
+    "user_id": "63b6527e5d3ac37cf37d7861"
+}
+###
+GET http://localhost:5000/todo/findByListID/63b7a7a87fcaccf413eb5ece
+Authorization: Beaer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjNiNjUyN2U1ZDNhYzM3Y2YzN2Q3ODYxIiwidXNlcm5hbWUiOiJoaWhpMTIzNCIsImlhdCI6MTY3MzAwNjkyMiwiZXhwIjoxNjczMDA3MjIyfQ.lFh7ToCTnjocQvfzmBmto4B-Nvw54zUtGBoKoHM-L2Q
+
+###
+PATCH  http://localhost:5000/todo/unpin/63b7f5aa2b199a8ef375c95c
+Authorization: Beaer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjNiNjUyN2U1ZDNhYzM3Y2YzN2Q3ODYxIiwidXNlcm5hbWUiOiJoaWhpMTIzNCIsImlhdCI6MTY3MzAwNjkyMiwiZXhwIjoxNjczMDA3MjIyfQ.lFh7ToCTnjocQvfzmBmto4B-Nvw54zUtGBoKoHM-L2Q
+Content-Type: application/json
+
+# {
+#     "list_id": "63b7a7a87fcaccf413eb5ece"
+# }
+
+###
+POST http://localhost:5000/token/refresh
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjNiNjUyN2U1ZDNhYzM3Y2YzN2Q3ODYxIiwidXNlcm5hbWUiOiJoaWhpMTIzNCIsImlhdCI6MTY3Mjk5MDEyMX0.CnFV5rQbp7vTAZd7P2UFZW9OnX7_sSMI72Hu0gbvsqc"
+}
+
+###
+PATCH http://localhost:5000/auth/info/63b6527e5d3ac37cf37d7861
+Authorization: Beaer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjNiNjUyN2U1ZDNhYzM3Y2YzN2Q3ODYxIiwidXNlcm5hbWUiOiJoaWhpMTIzNCIsImlhdCI6MTY3MjkyMTYxMCwiZXhwIjoxNjcyOTIyNTEwfQ.5rvNdgYxxO3qcN_FZqkyOKIhV-Nk806JUvdsJuBBJ-0
+Content-Type: application/json
+
+{
+    "full_name": "cuccu"
+}
+
+###
+POST http://localhost:5000/auth/login
+Content-Type: application/json
+
+{
+    "username": "hihi1234",
+    "password": "123456789"
+}
+###
+GET  http://localhost:5000/todolist/findByUserID/63b6527e5d3ac37cf37d7861
+Authorization: Beaer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjNiNjUyN2U1ZDNhYzM3Y2YzN2Q3ODYxIiwidXNlcm5hbWUiOiJoaWhpMTIzNCIsImlhdCI6MTY3Mjk5MDEzNSwiZXhwIjoxNjcyOTkwMTY1fQ.QE1V8IPVmp9vZddwy1wjWhUMl9-heI-HIi58rfeV9Ow
+
