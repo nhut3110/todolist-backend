@@ -89,11 +89,18 @@ This is an example of how to list things you need to use the software and how to
    ```sh
     git clone https://github.com/nhut3110/todolist-backend.git
    ```
-2. Install Dependencies 
+3. Install Dependencies 
    ```sh
     npm i
    ```
-4. Run App 
+   
+4. Create .env file in the root folder 
+
+
+5. Copy content in .env.example to .env file to setup database and some key-value 
+
+
+6. Run App 
    ```sh
     npm run dev
    ```
