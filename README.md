@@ -11,7 +11,7 @@
 <h3 align="center">Taskey Web API</h3>
 
   <p align="center">
-    Get reward throught learning activities
+    Small project to apply for intenrship
     <br />
     <a href="https://github.com/nhut3110/todolist-backend"><strong>Explore the docs »</strong></a>
     <br />
